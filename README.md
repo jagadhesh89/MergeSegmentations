@@ -3,18 +3,16 @@
 ## Repository overview
 This repository contains the file and scripts that support the study titled ***"Efficient integration and validation of deep learning-based nuclei segmentations in H&E slides from multiple models"***
 
-The study overview is illustrated here:
-
-![Study overview](https://github.com/jagadhesh89/MergeSegmentations/blob/main/Overview_final.png)
-
-The repository contains scripts that aid in 
-
 1)  [Merging segmentations](#Merging-segmentations-using-Annoy)
 2)  [Recreating Figures in manuscript](#Script-to-recreate-plots-as-demonstrated-in-manuscript)
 3)  [Linear mixed models for assessing variance explained in bulk-RNA gene expression data](#Script-to-build-mixed-linear-models)
 4)  [Pathway analysis for genes explained by high variance](#Pathway-analysis-script)
 
 All the data and files required to run the scripts are located in the [data](https://github.com/jagadhesh89/MergeSegmentations/tree/main/data) directory. 
+
+The study overview is illustrated here:
+
+![Study overview](https://github.com/jagadhesh89/MergeSegmentations/blob/main/Overview_final.png)
 
 ## Merging segmentations using Annoy
 Usage:  
