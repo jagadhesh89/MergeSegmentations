@@ -1,5 +1,12 @@
 # MergeSegmentations
 
+## Repository overview
+This repository contains the file and scripts that support the study titled ***"Efficient integration and validation of deep learning-based nuclei segmentations in H&E slides from multiple models"***
+
+The study overview is illustrated here:
+
+![Study overview](Image URL or Path)
+
 ## Merging segmentations using Annoy
 Usage:  
 ```python merge_preds.py -m <method1_predictions> -p <method2_predictions>```
