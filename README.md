@@ -26,4 +26,4 @@ The output is a ".dat" file which is a pickle file, which has all the combined/i
 
 
 ## Script to recreate plots as demonstrated in manuscript
-The Jupyter notebook titled **paper_plots_final.ipynb** has the analyses scripts that created the plots. Associated files to run this jupyter notebook have also been uploaded to the repository. 
+The Jupyter notebook titled **[paper_plots_final.ipynb](https://github.com/jagadhesh89/MergeSegmentations/blob/main/paper_plots_final.ipynb)** has the analyses scripts that created the plots. Associated files to run this jupyter notebook have also been uploaded to the repository. 
