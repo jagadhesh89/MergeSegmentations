@@ -5,7 +5,7 @@ This repository contains the file and scripts that support the study titled ***"
 
 The study overview is illustrated here:
 
-![Study overview](Image URL or Path)
+![Study overview](https://github.com/jagadhesh89/MergeSegmentations/blob/main/Overview_final.png)
 
 ## Merging segmentations using Annoy
 Usage:  
