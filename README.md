@@ -1,8 +1,8 @@
 # MergeSegmentations
 
 ## Merging segmentations using Annoy
-Usage: 
-python merge_preds.py -m <method1_predictions> -p <method2_predictions>
+Usage:  
+```python merge_preds.py -m <method1_predictions> -p <method2_predictions>```
 
 The input to the scripts are prediction files from the monusac and pannuke models. This can be tweaked to take inputs from any similar models as long as the outputs follow a datastructure that is similar to the format described as follows:
 
