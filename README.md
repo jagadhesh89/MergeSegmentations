@@ -11,6 +11,10 @@ The repository contains scripts that aid in
 
 1)  [Merging segmentations](#Merging-segmentations-using-Annoy)
 2)  [Recreating Figures in manuscript](#Script-to-recreate-plots-as-demonstrated-in-manuscript)
+3)  [Linear mixed models for assessing variance explained in bulk-RNA gene expression data](#Script-to-build-mixed-linear-models)
+4)  [Pathway analysis for genes explained by high variance](#Pathway-analysis-script)
+
+All the data and files required to run the scripts are located in the [data](https://github.com/jagadhesh89/MergeSegmentations/tree/main/data) directory. 
 
 ## Merging segmentations using Annoy
 Usage:  
@@ -39,3 +43,9 @@ The output is a ".dat" file which is a pickle file, which has all the combined/i
 
 ## Script to recreate plots as demonstrated in manuscript
 The Jupyter notebook titled **[paper_plots_final.ipynb](https://github.com/jagadhesh89/MergeSegmentations/blob/main/paper_plots_final.ipynb)** has the analyses scripts that created the plots. Associated files to run this jupyter notebook have also been uploaded to the repository. 
+
+## Script to build mixed linear models
+The script titled **[pca_script.R](https://github.com/jagadhesh89/MergeSegmentations/blob/main/pca_script.R)** that performs this analysis uses the variancePartition package in R to build the mixed models to assess the variance contributed by the individual models. 
+
+## Pathway analysis script
+The script titled **[pathway.R](https://github.com/jagadhesh89/MergeSegmentations/blob/main/pathway.R)** that performs this analysis uses the WebGestaltR package to perform the analysis. 
