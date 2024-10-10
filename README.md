@@ -1,8 +1,7 @@
 # MergeSegmentations
 
+## Merging segmentations using Annoy
 Usage: 
-
-
 python merge_preds.py -m <method1_predictions> -p <method2_predictions>
 
 The input to the scripts are prediction files from the monusac and pannuke models. This can be tweaked to take inputs from any similar models as long as the outputs follow a datastructure that is similar to the format described as follows:
@@ -24,3 +23,7 @@ The type details the type of the nuclei, i.e epithelial etc.
 The primary function of this code is the "merge_coordinates" function in the script that uses [Annoy](https://github.com/spotify/annoy) to merge the predictions.
 
 The output is a ".dat" file which is a pickle file, which has all the combined/integrated/merged predictions in a datastructure described in the example above. 
+
+
+## Script to recreate plots as demonstrated in manuscript
+The Jupyter notebook titled **paper_plots_final.ipynb** has the analyses scripts that created the plots. Associated files to run this jupyter notebook have also been uploaded to the repository. 
