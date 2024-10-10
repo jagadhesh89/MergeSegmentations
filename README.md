@@ -7,6 +7,11 @@ The study overview is illustrated here:
 
 ![Study overview](https://github.com/jagadhesh89/MergeSegmentations/blob/main/Overview_final.png)
 
+The repository contains scripts that aid in 
+
+1)  [Merging segmentations](#Merging-segmentations-using-Annoy)
+2)  [Recreating Figures in manuscript](#Script-to-recreate-plots-as-demonstrated-in-manuscript)
+
 ## Merging segmentations using Annoy
 Usage:  
 ```python merge_preds.py -m <method1_predictions> -p <method2_predictions>```
