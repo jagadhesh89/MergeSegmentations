@@ -11,7 +11,7 @@ The file is a pickle dump with underlying datastructure as a dictionary. Where e
 
 For example:
 {
-  'id1':{'box':[],'centroid':[],'contour':[], 'prob':[], 'type':[]}
+  'id1':{'box':[],'centroid':[],'contour':[], 'prob':[], 'type':[]},  
   'id2':{'box':[],'centroid':[],'contour':[], 'prob':[], 'type':[]}  
 }
 
