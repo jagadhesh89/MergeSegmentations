@@ -12,7 +12,7 @@ All the data and files required to run the scripts are located in the [data](htt
 
 The study overview is illustrated here:
 
-![Study overview](https://github.com/jagadhesh89/MergeSegmentations/blob/main/Overview_final.png)
+![Study overview](https://github.com/jagadhesh89/MergeSegmentations/blob/main/Overview_final.jpeg)
 
 ## Merging segmentations using Annoy
 Usage:  
