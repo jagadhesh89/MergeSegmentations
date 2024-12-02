@@ -16,9 +16,12 @@ The study overview is illustrated here:
 
 ## Merging segmentations using our package
 Usage:  
-```pip install cellmerge==0.1.0```
+```
+pip install cellmerge==0.1.0
+cellmerge -m <method1_predictions> -p <method2_predictions> -o outdir
+```
 
-```cellmerge -m <method1_predictions> -p <method2_predictions> -o <outdir>```
+Sample files for the -m and -p options are in the data directory under monusac and pannuke sub-directories. 
 
 The input to the scripts are prediction files from the monusac and pannuke models. This can be tweaked to take inputs from any similar models as long as the outputs follow a datastructure that is similar to the format described as follows:
 
