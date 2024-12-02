@@ -14,7 +14,7 @@ The study overview is illustrated here:
 
 ![Study overview](https://github.com/jagadhesh89/MergeSegmentations/blob/main/Overview_final.jpeg)
 
-## Merging segmentations using out package
+## Merging segmentations using our package
 Usage:  
 ```
 pip install cellmerge
