@@ -3,7 +3,7 @@
 ## Repository overview
 This repository contains the file and scripts that support the study titled ***"Efficient integration and validation of deep learning-based nuclei segmentations in H&E slides from multiple models"***
 
-1)  [Merging segmentations](#Merging-segmentations-using-Annoy)
+1)  [Merging segmentations](#Merging-segmentations-using-our-package)
 2)  [Recreating Figures in manuscript](#Script-to-recreate-plots-as-demonstrated-in-manuscript)
 3)  [Linear mixed models for assessing variance explained in bulk-RNA gene expression data](#Script-to-build-mixed-linear-models)
 4)  [Pathway analysis for genes explained by high variance](#Pathway-analysis-script)
@@ -14,9 +14,12 @@ The study overview is illustrated here:
 
 ![Study overview](https://github.com/jagadhesh89/MergeSegmentations/blob/main/Overview_final.jpeg)
 
-## Merging segmentations using Annoy
+## Merging segmentations using out package
 Usage:  
-```python merge_preds.py -m <method1_predictions> -p <method2_predictions>```
+```
+pip install cellmerge
+cellmerge -m <method1_predictions> -p <method2_predictions> -o outdir
+```
 
 The input to the scripts are prediction files from the monusac and pannuke models. This can be tweaked to take inputs from any similar models as long as the outputs follow a datastructure that is similar to the format described as follows:
 
