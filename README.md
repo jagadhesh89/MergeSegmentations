@@ -17,7 +17,7 @@ The study overview is illustrated here:
 ## Merging segmentations using our package
 Usage:  
 ```
-pip install cellmerge
+pip install cellmerge==0.1.0
 cellmerge -m <method1_predictions> -p <method2_predictions> -o outdir
 ```
 
