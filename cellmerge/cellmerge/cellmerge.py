@@ -111,23 +111,26 @@ def merge_coordinates(coords_method1, coords_method2, radius_threshold, pan_type
 
     return merged_coords, non_merged_coords1, non_merged_coords2, merged_indices_method1, merged_indices_method2, merged_types, merged_source
 
-
-if __name__ =="__main__":
+def main():
     parser = argparse.ArgumentParser(description='merge_preds')
 
-    parser.add_argument("-p", "--panfile",
-                        dest="pannuke",
-                        help="The path to the dat file of pannuke",
+    parser.add_argument("-p", "--model1pred",
+                        dest="model1",
+                        help="The path to the dat file of model1 (pannuke)",
                         required=True)
-    parser.add_argument("-m", "--monusac",
-                        dest="monusac",
-                        help="The path to the dat file of monusac",
+    parser.add_argument("-m", "--model2pred",
+                        dest="model2",
+                        help="The path to the dat file of model2 (monusac)",
+                        required=True)
+    parser.add_argument("-o", "--outputpath",
+                        dest="outdir",
+                        help="The path to output directory",
                         required=True)
 
     inpArgs = parser.parse_args()
-    pan_preds = os.path.abspath(inpArgs.pannuke)
-    mon_preds = os.path.abspath(inpArgs.monusac)
-
+    pan_preds = os.path.abspath(inpArgs.model1)
+    mon_preds = os.path.abspath(inpArgs.model2)
+    
     slidename=inpArgs.pannuke.split("/")[-2].replace(".dat","")
 
     wsi_pred_mon = joblib.load(mon_preds)
@@ -194,5 +197,8 @@ if __name__ =="__main__":
             type_req = int(wsi_pred_pan[eachpred]['type'])
             combined_dict[eachpred] = {'box':box_req, 'centroid':centroid_req,'contour':contour, 'prob':prob_req, 'type':type_req}
             
-    with open('/research/bsi/projects/urology/s209167.he_slides/images/segmentation/output/combined/' +slidename+ ".dat", 'wb') as file:
+    with open(outdir + "/" + slidename+ ".dat", 'wb') as file:
         pickle.dump(combined_dict, file)
+
+if __name__ =="__main__":
+    main()   
